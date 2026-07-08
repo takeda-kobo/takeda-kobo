@@ -1,6 +1,7 @@
-## Hi there 👋
+こんにちは、竹田電脳工房です。
 
 <!--
+## Hi there 👋
 **takeda-kobo/takeda-kobo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
