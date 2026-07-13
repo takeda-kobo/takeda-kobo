@@ -25,11 +25,15 @@ img {
     margin-bottom: 2rem;
 }
 
+/* バナー（選択肢 2 + object-position: top） */
 .banner img {
     width: 100%;
-    height: 350px;
+    height: 30vw;
+    /* 画面幅に応じて高さが変わる */
     object-fit: cover;
+    /* トリミングしつつ全体を表示 */
     object-position: top;
+    /* 上部の文字を優先して表示 */
 }
 
 .title-block h1 {
@@ -72,12 +76,15 @@ ul {
 }
 
 ul li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    /* インデント追加（①） */
 }
 
-/* セクション */
+/* セクション（①インデント） */
 .section {
     margin-bottom: 2rem;
+    padding-left: 1.5rem;
 }
 
 /* ========================= */
