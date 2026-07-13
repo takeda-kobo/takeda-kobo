@@ -25,7 +25,7 @@ img {
     margin-bottom: 2rem;
 }
 
-/* バナー（選択肢 2 + object-position: top） */
+/* バナー（レスポンシブ対応） */
 .banner img {
     width: 100%;
     height: 30vw;
@@ -51,7 +51,8 @@ h2 {
     max-width: 720px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem;
+    padding-left: 2rem;
+    /* ← h2 と ul の左右余白を揃える */
     padding-right: 1rem;
 }
 
@@ -69,30 +70,25 @@ h2 {
     font-weight: 600;
 }
 
-/* リスト */
+/* ========================= */
+/* リスト（インデント調整） */
+/* ========================= */
+
 ul {
-    /*     margin-bottom: 2rem;
-    padding-left: 1.5rem;
- */
     margin-bottom: 2rem;
-    padding-left: 2rem;
-    /* ← 1.5rem → 2rem に調整 */
+    padding-left: 2.5rem;
+    /* ← h2 より少し深くして階層を明確化 */
 }
 
 ul li {
-    /*     margin-bottom: 1rem;
-    padding-left: 0.5rem;
- */
-    /* インデント追加（①） */
     margin-bottom: 1rem;
     padding-left: 0.25rem;
-    /* ← 0.5rem → 0.25rem に調整 */
+    /* ← 箇条書きの「・」が自然に揃う */
 }
 
-/* セクション（①インデント） */
+/* セクション */
 .section {
     margin-bottom: 2rem;
-    padding-left: 1.5rem;
 }
 
 /* ========================= */
