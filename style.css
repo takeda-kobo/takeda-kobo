@@ -25,18 +25,42 @@ p {
     padding-left: 1.5rem;
 }
 
-/* h3 は section と同じ段 */
+/* h3 は section と同じ段（余白は第3レイヤーで調整） */
 .section h3 {
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
+    /* h3 は section と同じ段（余白は第3レイヤーで調整） */
+    /* 第2レイヤーでは余白を付けない */
 }
 
-/* p を h3 より一段下げる（ここが追加） */
+/* p を h3 より一段下げる（余白は第3レイヤーで調整） */
 .section p {
     padding-left: 1rem;
-    /* ← h3 より右へ。値は 0.8〜1.2rem が自然 */
-    margin-bottom: 1rem;
     line-height: 1.7;
+}
+
+/* ========================= */
+/* 第3レイヤー：余白調整（追加） */
+/* ========================= */
+
+/* h2 の上下余白 */
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* section の上下余白 */
+.section {
+    margin-bottom: 2rem;
+}
+
+/* h3 の上下余白（既存を上書き） */
+.section h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* p の余白（既存を上書き） */
+.section p {
+    margin-bottom: 1rem;
 }
 
 /* ========================= */
