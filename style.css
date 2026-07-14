@@ -25,14 +25,13 @@ ul {
     padding-left: 1.5rem;
 }
 
-/* ★ ul の定義はこれ 1 箇所に統合する（最重要） */
-ul {
+/* ★ ul の特異性を上げて確実に効かせる */
+.section ul {
     padding-left: 1.5rem;
-    /* ← ここが効けば「修正後」と完全一致 */
 }
 
-/* 説明文を「・」と揃える */
-ul li {
+/* ★ li の特異性も上げる */
+.section ul li {
     padding-left: 0;
     margin-bottom: 1rem;
 }
