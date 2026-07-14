@@ -41,11 +41,16 @@ p {
 /* 第3レイヤー：余白調整（追加） */
 /* ========================= */
 
+/* intro の上下余白 */
+.intro {
+    padding-top: 2rem;
+    /* ← バナーとの間に確実に余白ができる */
+    margin-bottom: 2rem;
+    /* ← intro → h2 の間も自然に開く */
+}
+
 /* h2 の上下余白 */
 h2 {
-    margin-top: 2rem;
-    margin-top: 0;
-    /* ← collapse を避けるために 0 にしても良い */
     margin-bottom: 1.5rem;
 }
 
