@@ -33,18 +33,20 @@ ul li {
 /* 第2レイヤー：内容ブロックの余白付与 */
 /* ========================= */
 
-/* h2 の内容部分だけ一段下げる */
+/* section と ul を同じ段に揃える */
 .section {
     padding-left: 1.5rem;
-    /* ← h2 より深く、ul より浅く */
 }
 
+/* 箇条書きの「・」を section と揃える */
 ul {
-    padding-left: 2.5rem;
-    /* ← 最小構成のまま（インデント基礎） */
+    padding-left: 1.5rem;
+    /* ← ここが最重要 */
 }
 
+/* 説明文を「・」と揃える */
 ul li {
-    padding-left: 0.5rem;
-    /* ← 箇条書きの「・」の位置はこのまま */
+    padding-left: 0;
+    /* ← ここが最重要 */
+    margin-bottom: 1rem;
 }
