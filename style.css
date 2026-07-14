@@ -1,12 +1,12 @@
 /* ========================= */
-/* インデント最小構成（基礎レイヤー） */
+/* 基礎レイヤー：余白ゼロ化 */
 /* ========================= */
 
-/* 親要素の余白を完全にゼロにする */
 .intro,
 .section,
 h2,
-ul {
+h3,
+p {
     max-width: 720px;
     margin-left: auto;
     margin-right: auto;
@@ -17,21 +17,49 @@ ul {
 }
 
 /* ========================= */
-/* 第2レイヤー：内容ブロックの余白付与 */
+/* 第2レイヤー：インデント構造 */
 /* ========================= */
 
-/* section と ul を同じ段に揃える */
+/* h2 の内容ブロックを 1.5rem 下げる */
 .section {
     padding-left: 1.5rem;
 }
 
-/* ★ ul の特異性を上げて確実に効かせる */
-.section ul {
-    padding-left: 1.5rem;
+/* h3（業務項目） */
+h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
-/* ★ li の特異性も上げる */
-.section ul li {
-    padding-left: 0;
+/* p（説明文） */
+.section p {
     margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+/* ========================= */
+/* 装飾（必要最小限） */
+/* ========================= */
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.banner img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+.title-block h1 {
+    display: none;
 }
