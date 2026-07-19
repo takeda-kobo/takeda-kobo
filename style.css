@@ -1,132 +1,95 @@
 /* =========================================
-   フォーム専用ベースレイヤー（本文と衝突しない）
+   ベースレイヤー（余白ゼロ化）
 ========================================= */
 
-.form-container {
-    max-width: 720px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    box-sizing: border-box;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    color: #222;
 }
 
-.form-title {
-    margin-top: 2.2em;
-    margin-bottom: 1.2em;
+/* 全体の左右余白（第2レイヤー） */
+.wrapper {
+    padding: 0 20px;
+}
+
+/* =========================================
+   タイトルブロック
+========================================= */
+
+.title-block {
+    margin: 0;
+    padding: 0;
+}
+
+.title-block img {
+    width: 100%;
+    display: block;
+}
+
+/* 非表示 h1（SEO 用） */
+.title-block h1 {
+    display: none;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    margin: 0.8rem 0 1.6rem 0;
+    color: #444;
+}
+
+/* =========================================
+   セクション構造（第3レイヤー）
+========================================= */
+
+.section {
+    margin-bottom: 2.4rem;
+}
+
+.section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
     border-left: 4px solid #999;
     padding-left: 10px;
-    font-size: 1.4rem;
-    font-weight: 600;
+}
+
+.section h3 {
+    font-size: 1.15rem;
+    margin: 1.2rem 0 0.6rem 0;
+}
+
+.section p {
+    margin: 0.4rem 0;
+}
+
+/* ◆タイトルブロックの空行用 */
+.spacer {
+    height: 1rem;
 }
 
 /* =========================================
-   ラベル・入力欄
+   リスト
 ========================================= */
 
-.form-container label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
+.section ul {
+    margin: 0.4rem 0 1rem 1.2rem;
+    padding: 0;
 }
 
-.form-container input[type="text"],
-.form-container input[type="email"],
-.form-container textarea {
-    width: 100%;
-    padding: 0.6rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-    box-sizing: border-box;
-}
-
-.form-container textarea {
-    height: 160px;
-    resize: vertical;
+.section li {
+    margin-bottom: 0.4rem;
 }
 
 /* =========================================
-   ボタン
+   フッター
 ========================================= */
 
-.form-container button,
-.form-container input[type="submit"] {
-    width: 100%;
-    padding: 0.6rem 1.2rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 4px;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-}
-
-.form-container button:hover,
-.form-container input[type="submit"]:hover {
-    background-color: #555;
-}
-
-/* =========================================
-   hCaptcha
-========================================= */
-
-.form-container .h-captcha {
-    margin-bottom: 1rem;
-}
-
-/* =========================================
-   戻りリンク
-========================================= */
-
-.form-container .back-link {
-    color: #0066cc;
-    text-decoration: none;
-    font-size: 0.95rem;
-}
-
-.form-container .back-link:hover {
-    text-decoration: underline;
-}
-
-/* =========================================
-   成功・エラー画面
-========================================= */
-
-.message-box {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.message-box .icon {
-    font-size: 64px;
-    margin-bottom: 20px;
-}
-
-.success .icon {
-    color: #4CAF50;
-}
-
-.error .icon {
-    color: #E53935;
-}
-
-.message-box p {
-    font-size: 17px;
-    margin-bottom: 30px;
-}
-
-.back-button {
-    display: inline-block;
-    padding: 12px 24px;
-    background: #000;
-    color: #fff;
-    border-radius: 6px;
-    text-decoration: none;
-}
-
-.back-button:hover {
-    background: #333;
+footer {
+    margin-top: 3rem;
+    padding: 1.6rem 0;
+    border-top: 1px solid #ccc;
+    font-size: 0.9rem;
+    color: #666;
 }
